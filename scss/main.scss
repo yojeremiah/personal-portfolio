@@ -33,7 +33,9 @@ ul {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  // background: url('../img/dark-honeycomb.png') no-repeat center center/cover;
+  align-items: center;
+  justify-content: center;
+  background: url('../img/light_grey.png');
 
   .main-header {
     display: flex;
@@ -51,14 +53,16 @@ ul {
 
   .main-content {
     flex: 1;
+    
 
     .profile-content-box {
+      background-color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       text-align: center;
-      padding: 1rem 1.25rem;
+      padding: 2rem 1.5rem;
       border: 1px solid black;
       border-radius: 2px;
       margin-bottom: 2rem;
@@ -103,3 +107,6 @@ ul {
     }
   }
 }
+
+// Media Queries
+@import 'media';

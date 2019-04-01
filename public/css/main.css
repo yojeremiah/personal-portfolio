@@ -29,6 +29,18 @@
 .my-3 {
   margin: 2rem 0; }
 
+@media (min-width: 500px) {
+  .page-container .main-content {
+    display: flex;
+    max-height: 70vh;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #fff; }
+    .page-container .main-content .profile-content-box {
+      border: none; }
+      .page-container .main-content .profile-content-box .profile-img {
+        min-width: 100px; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -51,7 +63,10 @@ ul {
   border: 1px solid black;
   min-height: 100vh;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("../img/light_grey.png"); }
   .page-container .main-header {
     display: flex;
     flex-direction: column;
@@ -65,12 +80,13 @@ ul {
   .page-container .main-content {
     flex: 1; }
     .page-container .main-content .profile-content-box {
+      background-color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       text-align: center;
-      padding: 1rem 1.25rem;
+      padding: 2rem 1.5rem;
       border: 1px solid black;
       border-radius: 2px;
       margin-bottom: 2rem; }
@@ -95,3 +111,15 @@ ul {
         margin-bottom: 0.5rem; }
       .page-container .main-content .profile-content-box .profile-text {
         padding: 0.25rem 0; }
+
+@media (min-width: 500px) {
+  .page-container .main-content {
+    display: flex;
+    max-height: 70vh;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #fff; }
+    .page-container .main-content .profile-content-box {
+      border: none; }
+      .page-container .main-content .profile-content-box .profile-img {
+        min-width: 100px; } }
