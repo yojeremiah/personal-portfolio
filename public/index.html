@@ -10,17 +10,21 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
     <title>Jeremiah Schultz | Web Developer</title>
   </head>
   <body>
     <div class="page-container">
+      <!-- Header Image & Text -->
       <header class="main-header container">
         <img src="img/initials.png" alt="JS Logo" class="logo-img" />
         <h1 class="header-text">Positive In // Positive Out</h1>
       </header>
+      <!-- Main Page Content -->
       <main class="main-content container">
-        <div class="content-box">
+        <!-- Profile Pic & Info -->
+        <div class="profile-content-box">
           <!-- Profile Pic -->
           <img
             src="img/profile-pic.png"
@@ -34,17 +38,27 @@
               <li><p>Front End Developer</p></li>
               <li>
                 <a href="mailto:jschultzdev@gmail.com" target="_top"
-                  >Send Me An Email!</a
+                  class="email-link">Send Me An Email!</a
                 >
               </li>
             </ul>
             <ul class="socials">
-              <li><i class="fab fa-github-square fa-2x"></i></li>
-              <li><i class="fab fa-twitter-square fa-2x"></i></li>
+              <li><a href="https://github.com/yojeremiah"><i class="fab fa-github-square fa-3x social-icon"></i></a></li>
+              <li><a href="https://twitter.com/yojeremiahh"><i class="fab fa-twitter-square fa-3x social-icon"></i></a></li>
             </ul>
           </div>
         </div>
+        <!-- Profile Main Text  -->
+        <div class="profile-content-box">
+          <h3 class="profile-heading">Hello, I am Jeremiah Schultz</h3>
+          <p class="profile-text">An aspiring front-end developer based out of Southern California</p>
+          <p class="profile-text">Focused on developing clean and effective web-applications</p>
+          <!-- <p class="profile-text">Follow me on <a href="https://twitter.com/yojeremiahh" class="twitter-link">Twitter</a> to stay connected</p> -->
+          <p class="profile-text">Have a look at my code journal below!</p>
+          <a href="https://journal.jschultz.dev" target="_blank" class="btn my-1">My Work</a>
+        </div>
       </main>
+      <!-- Footer -->
     </div>
   </body>
 </html>

@@ -3,6 +3,14 @@
   margin: auto;
   padding: 0 1rem; }
 
+.btn {
+  display: block;
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
 .py-1 {
   padding: 1rem 0; }
 
@@ -13,18 +21,21 @@
   padding: 2rem 0; }
 
 .my-1 {
-  padding: 1rem 0; }
+  margin: 1rem 0; }
 
 .my-2 {
-  padding: 2rem 0; }
+  margin: 2rem 0; }
 
 .my-3 {
-  padding: 2rem 0; }
+  margin: 2rem 0; }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+html, body {
+  font-family: 'Nunito', sans-serif; }
 
 a {
   text-decoration: none;
@@ -53,22 +64,34 @@ ul {
       margin-top: 1rem; }
   .page-container .main-content {
     flex: 1; }
-    .page-container .main-content .content-box {
+    .page-container .main-content .profile-content-box {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       text-align: center;
-      padding: 1rem 0; }
-      .page-container .main-content .content-box .profile-img {
-        max-width: 250px;
+      padding: 1rem 1.25rem;
+      border: 1px solid black;
+      border-radius: 2px;
+      margin-bottom: 2rem; }
+      .page-container .main-content .profile-content-box .profile-img {
+        max-width: 80%;
         border-radius: 50%; }
-      .page-container .main-content .content-box .profile-info-list {
+      .page-container .main-content .profile-content-box .profile-info-list {
         margin: 1rem 0; }
-        .page-container .main-content .content-box .profile-info-list li {
+        .page-container .main-content .profile-content-box .profile-info-list li {
           padding: 0.35rem;
           border-bottom: 1px solid black; }
-      .page-container .main-content .content-box .profile-info .socials {
+          .page-container .main-content .profile-content-box .profile-info-list li .email-link {
+            color: blue; }
+      .page-container .main-content .profile-content-box .profile-info .socials {
+        padding: 0.5rem;
         display: flex;
         justify-content: space-evenly;
         align-items: center; }
+      .page-container .main-content .profile-content-box .profile-heading {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        margin-bottom: 0.5rem; }
+      .page-container .main-content .profile-content-box .profile-text {
+        padding: 0.25rem 0; }

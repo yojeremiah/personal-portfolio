@@ -5,6 +5,15 @@
   // border: 1px solid red;
 }
 
+.btn {
+  display: block;
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 // Padding
 .py-1 {
   padding: 1rem 0;
@@ -17,11 +26,11 @@
 }
 // Margin
 .my-1 {
-  padding: 1rem 0;
+  margin: 1rem 0;
 }
 .my-2 {
-  padding: 2rem 0;
+  margin: 2rem 0;
 }
 .my-3 {
-  padding: 2rem 0;
+  margin: 2rem 0;
 }

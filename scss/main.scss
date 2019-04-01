@@ -1,6 +1,7 @@
 @import "animations";
 @import "utilities";
 @import "variables";
+@import "media";
 
 // Base Styles
 * {
@@ -8,6 +9,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html, body {
+  font-family: 'Nunito', sans-serif;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -27,6 +33,7 @@ ul {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  // background: url('../img/dark-honeycomb.png') no-repeat center center/cover;
 
   .main-header {
     display: flex;
@@ -45,17 +52,19 @@ ul {
   .main-content {
     flex: 1;
 
-    .content-box {
+    .profile-content-box {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      // border: 1px solid red;
       text-align: center;
-      padding: 1rem 0;
+      padding: 1rem 1.25rem;
+      border: 1px solid black;
+      border-radius: 2px;
+      margin-bottom: 2rem;
 
       .profile-img {
-        max-width: 250px;
+        max-width: 80%;
         border-radius: 50%;
       }
 
@@ -66,14 +75,31 @@ ul {
           li {
             padding: 0.35rem;
             border-bottom: 1px solid black;
+
+            .email-link {
+              color: blue;
+            }
           }
         }
         .socials {
+          padding: 0.5rem;
           display: flex;
           justify-content: space-evenly;
           align-items: center;
         }
       }
+
+      .profile-heading {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        margin-bottom: 0.5rem;
+      }
+
+      .profile-text {
+        padding: 0.25rem 0;
+
+      }
+
     }
   }
 }
