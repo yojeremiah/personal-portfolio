@@ -1,14 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html,
 body {
   font-family: 'Montserrat', sans-serif;
-  background: url('https://svgshare.com/i/CCC.svg') center center/cover;
-}
+  background: url("https://svgshare.com/i/CCC.svg") center center/cover; }
 
 h1,
 h2,
@@ -17,25 +15,20 @@ h4,
 h5,
 h6 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-}
+  font-weight: 600; }
 
 ul {
-  list-style: none;
-}
+  list-style: none; }
 
 a {
   text-decoration: none;
-  color: inherit;
-}
+  color: inherit; }
 
 i {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .text-underline {
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 
 .btn {
   display: inline-block;
@@ -43,15 +36,7 @@ i {
   border-radius: 5px;
   padding: 1rem 1.5rem;
   margin-top: 0.5rem;
-  cursor: pointer;
-}
-
-// .bottom-line {
-//   margin: .5rem auto;
-//   height: 2px;
-//   width: 75%;
-//   background-color: rgba(0,0,0,0.3);
-// }
+  cursor: pointer; }
 
 .page-wrapper {
   display: flex;
@@ -59,14 +44,12 @@ i {
   align-items: center;
   padding: 2.25rem;
   min-height: 100vh;
-  min-width: 320px;
-}
+  min-width: 320px; }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 1.5rem;
-}
+  grid-gap: 1.5rem; }
 
 .right,
 .left {
@@ -74,80 +57,53 @@ i {
   padding: 2rem 2.25rem;
   border: 1px solid black;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  text-align: center;
-}
+  text-align: center; }
 
 .profile-pic {
   display: block;
   max-width: 175px;
   margin: auto;
-  border-radius: 50%;
-}
+  border-radius: 50%; }
 
 .profile-name {
-  // padding-top: 1rem;
-  // padding-bottom: .25rem;
   padding: 1rem 0;
   font-size: 1.8rem;
-  line-height: 1;
-}
+  line-height: 1; }
 
 .profile-text {
   line-height: 1.7;
   padding: 0.25rem 0;
-  font-size: 1.1rem;
-}
+  font-size: 1.1rem; }
 
 .profile-heading {
-  font-size: 2rem;
-}
+  font-size: 2rem; }
 
 .logos {
   display: flex;
-  justify-content: center;
-  // padding-top: .25rem;
-
-  .fab {
-    padding: 0.5rem;
-  }
-}
-
-// .right {
-//   .profile-text {
-//     padding: 5rem 0;
-//   }
-//   .btn {
-//     // margin-top: 0;
-//   }
-// }
+  justify-content: center; }
+  .logos .fab {
+    padding: 0.5rem; }
 
 @media only screen and (min-width: 860px) {
   .page-wrapper {
-    padding: 1.5rem;
-  }
+    padding: 1.5rem; }
   .grid-container {
     grid-template-columns: 1fr 2fr;
     grid-gap: 3rem;
     min-height: 80vh;
     max-width: 1100px;
-    margin: auto;
-  }
+    margin: auto; }
   .profile-pic {
-    max-width: 200px;
-  }
+    max-width: 200px; }
   .left {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-  }
+    align-items: center; }
   .right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    .profile-text {
-      padding: 0;
-    }
-  }
-}
+    align-items: center; }
+    .right .profile-text {
+      padding: 0; } }

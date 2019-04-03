@@ -1,0 +1,35 @@
+@import 'variables';
+// Base Styles & Utilities
+// General Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: $font-stack;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+i {
+  cursor: pointer;
+}
+
+// Buttons
+.btn {
+  display: inline-block;
+  border: 1px solid $dark-color;
+  border-radius: 5px;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+}

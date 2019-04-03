@@ -1,0 +1,47 @@
+@import 'variables';
+// Media Queries
+// Larger than Tablets
+@media only screen and (min-width: 860px) {
+  html,
+  body {
+    font-size: 1.15rem;
+  }
+
+  .page-wrapper {
+    // padding: 1.5rem;
+  }
+
+  .page-grid {
+    min-height: 70vh;
+    max-width: $max-width;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 3rem;
+    margin: auto;
+  }
+
+  .profile-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .profile-name {
+      font-size: 2.2rem;
+    }
+  }
+
+  .profile-pic {
+    max-width: 200px;
+  }
+
+  .profile-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .profile-heading {
+      font-size: 2rem;
+    }
+  }
+}

@@ -5,4 +5,105 @@
 
 html,
 body {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+i {
+  cursor: pointer; }
+
+.btn {
+  display: inline-block;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 1rem 1.25rem;
+  cursor: pointer; }
+
+.page-wrapper {
+  line-height: 1.4;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 2.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.page-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem; }
+
+.profile-left {
+  background-color: #f4f4f4;
+  padding: 2rem 1.25rem;
+  text-align: center;
+  border: 1px solid blue; }
+
+.profile-pic {
+  display: block;
+  max-width: 175px;
+  margin: 0 auto;
+  border-radius: 50%; }
+
+.profile-name {
+  font-size: 1.8rem;
+  line-height: 1;
+  padding: 1rem 0;
+  font-weight: 700; }
+
+.socials {
+  display: flex;
+  justify-content: center; }
+  .socials i {
+    padding: 1rem 0.5rem; }
+
+.profile-text {
+  padding: 0.25rem 0;
+  font-size: 1.1rem; }
+
+.profile-right {
+  background-color: #f4f4f4;
+  padding: 2rem 1.25rem;
+  text-align: center;
+  border: 1px solid green; }
+  .profile-right .profile-text {
+    line-height: 1.75;
+    padding: 0.75rem 0; }
+    .profile-right .profile-text:last-of-type {
+      padding-bottom: 0.75rem; }
+
+.profile-heading {
+  font-size: 1.6rem;
+  padding-bottom: 1rem; }
+
+@media only screen and (min-width: 860px) {
+  html,
+  body {
+    font-size: 1.15rem; }
+  .page-grid {
+    min-height: 70vh;
+    max-width: 1100px;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 3rem;
+    margin: auto; }
+  .profile-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .profile-left .profile-name {
+      font-size: 2.2rem; }
+  .profile-pic {
+    max-width: 200px; }
+  .profile-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .profile-right .profile-heading {
+      font-size: 2rem; } }
