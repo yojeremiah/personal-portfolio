@@ -29,8 +29,13 @@
   text-align: center;
   border: 1px solid blue;
 
-  .btn {
-    // padding: ;
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    // border: 1px solid red;
+    height: 100%;
   }
 }
 

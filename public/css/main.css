@@ -43,6 +43,12 @@ i {
   padding: 2rem 1.25rem;
   text-align: center;
   border: 1px solid blue; }
+  .profile-left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%; }
 
 .profile-pic {
   display: block;
