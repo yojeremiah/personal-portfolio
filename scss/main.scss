@@ -5,6 +5,7 @@
 
 // Page Wrapper
 .page-wrapper {
+  position: relative;
   line-height: 1.4;
   min-width: $min-width;
   min-height: 100vh;
@@ -87,6 +88,73 @@
 .profile-heading {
   font-size: 1.6rem;
   padding-bottom: 1rem;
+}
+
+// Email Modal Styles
+.email-modal {
+  display: none;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.65);
+  position: fixed;
+  z-index: 13;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  &-content {
+    position: relative;
+    background-color: $light-color;
+    border-radius: 2px;
+    padding: 2.5rem;
+    width: 80%;
+    max-width: 900px;
+  }
+
+  .close-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 0.75rem;
+    font-size: 1.8rem;
+    color: red;
+    opacity: 0.5;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .form-input-group {
+    margin: 2rem 0;
+  }
+
+  .text-area {
+    min-height: 10vh;
+  }
+
+  .text-input,
+  .text-area {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .form-text {
+    text-align: center;
+    clear: both;
+  }
+
+  .form-label {
+    display: block;
+    padding: 0.75rem 0;
+  }
+
+  .btn-submit {
+    margin: auto;
+  }
 }
 
 // Media Queries

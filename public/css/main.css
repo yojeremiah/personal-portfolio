@@ -17,14 +17,28 @@ a {
 i {
   cursor: pointer; }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  display: block; }
+
 .btn {
-  display: inline-block;
+  display: block;
   border: 1px solid #333;
   border-radius: 5px;
   padding: 1rem 1.25rem;
   cursor: pointer; }
 
 .page-wrapper {
+  position: relative;
   line-height: 1.4;
   min-width: 320px;
   min-height: 100vh;
@@ -87,6 +101,52 @@ i {
   font-size: 1.6rem;
   padding-bottom: 1rem; }
 
+.email-modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.65);
+  position: fixed;
+  z-index: 13;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; }
+  .email-modal-content {
+    position: relative;
+    background-color: #f4f4f4;
+    border-radius: 2px;
+    padding: 2.5rem;
+    width: 80%;
+    max-width: 900px; }
+  .email-modal .close-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 0.75rem;
+    font-size: 1.8rem;
+    color: red;
+    opacity: 0.5; }
+    .email-modal .close-modal:hover {
+      cursor: pointer; }
+  .email-modal .form-input-group {
+    margin: 2rem 0; }
+  .email-modal .text-area {
+    min-height: 10vh; }
+  .email-modal .text-input,
+  .email-modal .text-area {
+    width: 100%;
+    padding: 0.5rem; }
+  .email-modal .form-text {
+    text-align: center;
+    clear: both; }
+  .email-modal .form-label {
+    display: block;
+    padding: 0.75rem 0; }
+  .email-modal .btn-submit {
+    margin: auto; }
+
 @media only screen and (min-width: 937px) {
   html,
   body {
@@ -112,4 +172,6 @@ i {
     justify-content: center;
     align-items: center; }
     .profile-right .profile-heading {
-      font-size: 2rem; } }
+      font-size: 2rem; }
+  .email-modal .close-modal {
+    font-size: 2rem; } }

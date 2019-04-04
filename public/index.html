@@ -29,7 +29,9 @@
               alt="Logo"
               class="profile-pic"
             /> -->
+            <!-- Profile Pic -->
             <img src="img/profile-pic.png" alt="Logo" class="profile-pic" />
+            <!-- Profile Name -->
             <h1 class="profile-name">Jeremiah Schultz</h1>
             <!-- Resume -->
             <p class="profile-text"><a href="#">My Work History</a></p>
@@ -53,9 +55,10 @@
               </li>
             </ul>
             <!-- Email Button -->
-            <a href="#" class="btn">Send Me Email!</a>
+            <a href="#" class="btn btn-email">Send Me Email!</a>
           </div>
         </aside>
+
         <!-- Right-Side Profile Content -->
         <section class="profile-right">
           <h2 class="profile-heading">Design. Develop. Deploy.</h2>
@@ -66,7 +69,7 @@
           <p class="profile-text">
             I'm focused on translating creative ideas into functional web pages
             that emphasize <strong>accessible</strong> and
-            <strong>resposnive</strong> user-experiences for all types of
+            <strong>responsive</strong> user-experiences for all types of
             professional applications.
           </p>
           <p class="profile-text">
@@ -80,11 +83,54 @@
             Don't be afraid to reach out if you'd like to collaborate!
           </p>
           <!-- Projects Button -->
-          <a href="https://journal.jschultz.dev" class="btn"
+          <a href="https://journal.jschultz.dev" class="btn btn-projects"
             >Explore My Projects</a
           >
         </section>
       </div>
     </main>
+
+    <!-- Email Modal Ovewrlay & Form -->
+    <div class="email-modal" id="email-modal">
+      <div class="email-modal-content">
+        <div class="close-modal">&times;</div>
+        <p class="form-text">Send me a message below!</p>
+        <form action="#" class="email-form">
+          <div class="form-input-group">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              class="text-input"
+            />
+          </div>
+          <div class="form-input-group">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="text"
+              id="email"
+              email="name"
+              placeholder="Enter your email"
+              class="text-input"
+            />
+          </div>
+          <div class="form-input-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Enter a message!"
+              class="text-area"
+            ></textarea>
+          </div>
+          <input type="button" class="btn btn-submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <!-- Main JS File -->
+    <script src="js/main.js"></script>
   </body>
 </html>

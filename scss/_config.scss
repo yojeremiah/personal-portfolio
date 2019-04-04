@@ -25,9 +25,21 @@ i {
   cursor: pointer;
 }
 
+// Clear Default Styles
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  margin: 0; /* 2 */
+  display: block;
+}
+
 // Buttons
 .btn {
-  display: inline-block;
+  display: block;
   border: 1px solid $dark-color;
   border-radius: 5px;
   padding: 1rem 1.25rem;
