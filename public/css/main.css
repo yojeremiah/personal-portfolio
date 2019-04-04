@@ -153,7 +153,7 @@ textarea {
     font-size: 1.15rem; }
   .page-grid {
     min-height: 70vh;
-    max-width: 1100px;
+    max-width: 1200px;
     grid-template-columns: 1fr 2fr;
     grid-gap: 3rem;
     margin: auto; }
