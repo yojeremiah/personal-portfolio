@@ -55,7 +55,7 @@
               </li>
             </ul>
             <!-- Email Button -->
-            <a href="#" class="btn btn-email">Send Me Email!</a>
+            <div class="btn btn-email" id="btn-email">Send Me Email!</div>
           </div>
         </aside>
 
@@ -93,7 +93,7 @@
     <!-- Email Modal Ovewrlay & Form -->
     <div class="email-modal" id="email-modal">
       <div class="email-modal-content">
-        <div class="close-modal">&times;</div>
+        <div class="close-modal-x">&times;</div>
         <p class="form-text">Send me a message below!</p>
         <form action="#" class="email-form">
           <div class="form-input-group">
@@ -125,7 +125,12 @@
               class="text-area"
             ></textarea>
           </div>
-          <input type="button" class="btn btn-submit" value="Submit" />
+          <input
+            type="button"
+            class="btn btn-submit"
+            id="btn-submit"
+            value="Submit"
+          />
         </form>
       </div>
     </div>
