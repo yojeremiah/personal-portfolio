@@ -28,6 +28,7 @@ textarea {
   display: block; }
 
 .btn {
+  margin: 0 auto;
   display: block;
   border: 1px solid #333;
   border-radius: 5px;
@@ -176,8 +177,11 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    padding: 2rem 1.5rem; }
     .profile-right .profile-heading {
       font-size: 2rem; }
+  .btn {
+    align-self: end; }
   .email-modal .close-modal {
     font-size: 2rem; } }
