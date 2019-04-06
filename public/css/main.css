@@ -58,9 +58,14 @@ textarea {
   .profile-left-flex-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 100%; }
+  .profile-left .profile-text {
+    padding: 1rem 0;
+    text-align: center; }
+    .profile-left .profile-text:last-of-type {
+      padding-bottom: 0; }
 
 .profile-pic {
   display: block;
@@ -72,14 +77,24 @@ textarea {
   font-size: 1.8rem;
   line-height: 1;
   padding: 1rem 0;
-  font-weight: 700; }
+  font-weight: 700;
+  text-align: center; }
 
 .socials {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 1rem auto; }
   .socials i {
     padding: 1rem 0.5rem;
     cursor: pointer; }
+  .socials .fa-github {
+    color: #211f1f; }
+  .socials .fa-twitter {
+    color: #55acee; }
+  .socials .fa-linkedin-in {
+    color: #0077b5; }
 
 .profile-text {
   padding: 0.25rem 0;
@@ -92,31 +107,42 @@ textarea {
   border: 1px solid green;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center; }
   .profile-right .profile-text {
-    line-height: 1.75;
+    line-height: 1.6;
     padding: 0.75rem 0; }
     .profile-right .profile-text:last-of-type {
       padding-bottom: 0.75rem; }
     .profile-right .profile-text .smiley-face {
       font-size: 1.5rem; }
+  .profile-right .profile-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+    .profile-right .profile-logos li {
+      padding: 0.5rem 1rem; }
+    .profile-right .profile-logos .fa-html5 {
+      color: #f16529; }
+    .profile-right .profile-logos .fa-css3-alt {
+      color: #3c99dc; }
+    .profile-right .profile-logos .fa-js {
+      color: #f0db4f; }
+    .profile-right .profile-logos .fa-bootstrap {
+      color: #553c7b; }
+    .profile-right .profile-logos .fa-git {
+      color: #f1502f; }
+    .profile-right .profile-logos .fa-sass {
+      color: #cd6799; }
   .profile-right .btn-projects {
     width: 100%; }
 
 .profile-heading {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding-bottom: 1rem; }
-
-.profile-logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
-  .profile-logos li {
-    padding: 0.5rem 1rem; }
 
 .email-modal {
   display: none;
@@ -133,7 +159,8 @@ textarea {
   .email-modal-content {
     position: relative;
     background-color: #f4f4f4;
-    border-radius: 2px;
+    border: 2px solid #333;
+    border-radius: 5px;
     padding: 2.5rem;
     width: 80%;
     max-width: 900px; }
@@ -185,13 +212,14 @@ textarea {
     justify-content: center;
     align-items: center; }
     .profile-left .profile-name {
-      font-size: 2.2rem; }
+      font-size: 2.2rem;
+      line-height: 1.25; }
   .profile-pic {
     max-width: 215px; }
   .profile-right {
     padding: 2rem 1.5rem; }
     .profile-right .profile-heading {
-      font-size: 2rem; }
+      font-size: 2.4rem; }
   .btn {
     align-self: end; }
   .email-modal .close-modal {

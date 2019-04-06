@@ -33,10 +33,19 @@
   &-flex-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     // border: 1px solid red;
     height: 100%;
+  }
+
+  .profile-text {
+    padding: 1rem 0;
+    text-align: center;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -52,15 +61,30 @@
   line-height: 1;
   padding: 1rem 0;
   font-weight: 700;
+  text-align: center;
 }
 
 .socials {
   display: flex;
   justify-content: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 1rem auto;
 
   i {
     padding: 1rem 0.5rem;
     cursor: pointer;
+  }
+
+  // Social Logo Colors
+  .fa-github {
+    color: $github-color;
+  }
+  .fa-twitter {
+    color: $twitter-color;
+  }
+  .fa-linkedin-in {
+    color: $linkedin-color;
   }
 }
 
@@ -77,11 +101,11 @@
   border: 1px solid green;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   .profile-text {
-    line-height: 1.75;
+    line-height: 1.6;
     padding: 0.75rem 0;
 
     &:last-of-type {
@@ -93,28 +117,50 @@
     }
   }
 
+  .profile-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    li {
+      padding: 0.5rem 1rem;
+    }
+
+    // Logo Colors
+    .fa-html5 {
+      color: $html-color;
+    }
+    .fa-css3-alt {
+      color: $css-color;
+    }
+    .fa-js {
+      color: $js-color;
+    }
+    .fa-bootstrap {
+      color: $bootstrap-color;
+    }
+    .fa-git {
+      color: $git-color;
+    }
+    .fa-sass {
+      color: $sass-color;
+    }
+  }
+
   .btn-projects {
     width: 100%;
   }
 }
 
 .profile-heading {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding-bottom: 1rem;
 }
 
-.profile-logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-
-  li {
-    padding: 0.5rem 1rem;
-  }
-}
+// Tech Stack Logos
 
 // Email Modal Styles
 .email-modal {
@@ -134,7 +180,8 @@
   &-content {
     position: relative;
     background-color: $light-color;
-    border-radius: 2px;
+    border: 2px solid $dark-color;
+    border-radius: 5px;
     padding: 2.5rem;
     width: 80%;
     max-width: 900px;
