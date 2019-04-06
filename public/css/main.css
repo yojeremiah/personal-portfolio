@@ -14,9 +14,6 @@ a {
   text-decoration: none;
   color: inherit; }
 
-i {
-  cursor: pointer; }
-
 button,
 input,
 optgroup,
@@ -81,7 +78,8 @@ textarea {
   display: flex;
   justify-content: center; }
   .socials i {
-    padding: 1rem 0.5rem; }
+    padding: 1rem 0.5rem;
+    cursor: pointer; }
 
 .profile-text {
   padding: 0.25rem 0;
@@ -114,7 +112,9 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
   .profile-logos li {
     padding: 0.5rem 1rem; }
 

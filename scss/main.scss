@@ -60,6 +60,7 @@
 
   i {
     padding: 1rem 0.5rem;
+    cursor: pointer;
   }
 }
 
@@ -107,7 +108,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  // border: 1px solid red;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
   li {
     padding: 0.5rem 1rem;
