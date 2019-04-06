@@ -65,7 +65,7 @@
 
 .profile-text {
   padding: 0.25rem 0;
-  font-size: 1.1rem; // increase on media
+  font-size: 1.2rem; // increase on media
 }
 
 // Right-Side Profile
@@ -74,6 +74,10 @@
   padding: 2rem 1.25rem;
   text-align: center;
   border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   .profile-text {
     line-height: 1.75;
@@ -81,6 +85,10 @@
 
     &:last-of-type {
       padding-bottom: 0.75rem;
+    }
+
+    .smiley-face {
+      font-size: 1.5rem;
     }
   }
 
@@ -92,6 +100,18 @@
 .profile-heading {
   font-size: 1.6rem;
   padding-bottom: 1rem;
+}
+
+.profile-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  // border: 1px solid red;
+
+  li {
+    padding: 0.5rem 1rem;
+  }
 }
 
 // Email Modal Styles
@@ -161,6 +181,7 @@
 
   .btn-submit {
     margin: auto;
+    margin-top: 1.25rem;
     width: 100%;
   }
 }

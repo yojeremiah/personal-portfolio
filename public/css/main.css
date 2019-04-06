@@ -85,24 +85,38 @@ textarea {
 
 .profile-text {
   padding: 0.25rem 0;
-  font-size: 1.1rem; }
+  font-size: 1.2rem; }
 
 .profile-right {
   background-color: #f4f4f4;
   padding: 2rem 1.25rem;
   text-align: center;
-  border: 1px solid green; }
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   .profile-right .profile-text {
     line-height: 1.75;
     padding: 0.75rem 0; }
     .profile-right .profile-text:last-of-type {
       padding-bottom: 0.75rem; }
+    .profile-right .profile-text .smiley-face {
+      font-size: 1.5rem; }
   .profile-right .btn-projects {
     width: 100%; }
 
 .profile-heading {
   font-size: 1.6rem;
   padding-bottom: 1rem; }
+
+.profile-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .profile-logos li {
+    padding: 0.5rem 1rem; }
 
 .email-modal {
   display: none;
@@ -152,16 +166,17 @@ textarea {
     padding: 0.75rem 0; }
   .email-modal .btn-submit {
     margin: auto;
+    margin-top: 1.25rem;
     width: 100%; }
 
-@media only screen and (min-width: 937px) {
+@media only screen and (min-width: 1035px) {
   html,
   body {
     font-size: 1.15rem; }
   .page-grid {
     min-height: 70vh;
     max-width: 1200px;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2.5fr;
     grid-gap: 3rem;
     margin: auto; }
   .profile-left {
@@ -174,10 +189,6 @@ textarea {
   .profile-pic {
     max-width: 215px; }
   .profile-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 2rem 1.5rem; }
     .profile-right .profile-heading {
       font-size: 2rem; }
