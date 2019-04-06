@@ -23,6 +23,10 @@
 }
 
 // Profile Sections
+.profile-text {
+  padding: 0.25rem 0;
+  font-size: 1.2rem; // increase on media
+}
 // Left-Side Profile
 .profile-left {
   background-color: $light-color;
@@ -37,6 +41,16 @@
     align-items: center;
     // border: 1px solid red;
     height: 100%;
+  }
+
+  .resume-link {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid transparent;
+    transition: border 200ms ease-in-out;
+
+    &:hover {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
   }
 
   .profile-text {
@@ -57,7 +71,7 @@
 }
 
 .profile-name {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   line-height: 1;
   padding: 1rem 0;
   font-weight: 700;
@@ -74,23 +88,31 @@
   i {
     padding: 1rem 0.5rem;
     cursor: pointer;
+    transition: opacity 200ms ease-in, transform 275ms ease-in-out;
   }
 
   // Social Logo Colors
   .fa-github {
     color: $github-color;
+    &:hover {
+      opacity: 0.85;
+      transform: scale(1.3);
+    }
   }
   .fa-twitter {
     color: $twitter-color;
+    &:hover {
+      opacity: 0.8;
+      transform: scale(1.3);
+    }
   }
   .fa-linkedin-in {
     color: $linkedin-color;
+    &:hover {
+      opacity: 0.8;
+      transform: scale(1.3);
+    }
   }
-}
-
-.profile-text {
-  padding: 0.25rem 0;
-  font-size: 1.2rem; // increase on media
 }
 
 // Right-Side Profile
