@@ -135,7 +135,12 @@
       <div class="email-modal-content">
         <div class="close-modal-x">&times;</div>
         <p class="form-text">Send me a message below!</p>
-        <form action="#" class="email-form">
+        <form
+          method="POST"
+          class="email-form"
+          name="email-form"
+          data-netlify="true"
+        >
           <div class="form-input-group">
             <label for="name" class="form-label">Name</label>
             <input
