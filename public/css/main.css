@@ -216,10 +216,15 @@ textarea {
     margin-top: 1.25rem;
     width: 100%; }
 
+@media only screen and (min-width: 768px) {
+  html,
+  body {
+    font-size: 1.15rem; } }
+
 @media only screen and (min-width: 1175px) {
   html,
   body {
-    font-size: 1.15rem; }
+    font-size: 1.25rem; }
   .page-grid {
     min-height: 70vh;
     max-width: 1200px;
@@ -241,6 +246,7 @@ textarea {
     .profile-right .profile-heading {
       font-size: 2.4rem; }
   .btn {
-    align-self: end; }
+    align-self: end;
+    font-size: 1.15rem; }
   .email-modal .close-modal {
     font-size: 2rem; } }
