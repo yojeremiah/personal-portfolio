@@ -1,11 +1,13 @@
 // Variables
 $font-stack: 'Montserrat', sans-serif;
-$light-color: #f4f4f4;
-$med-color: #aaa;
-$dark-color: #333;
+$light-color: #f5f9ff;
+$med-color: #f1f1e6;
+$dark-color: #2a324b;
+$bg-color: #526cfe;
+$text-color: #19233b;
 $min-width: 320px;
 $max-width: 1200px;
-$desktop-breakpoint: 1175px;
+$desktop-breakpoint: 1055px;
 
 // Logo-Colors
 $github-color: #211f1f;
@@ -18,3 +20,6 @@ $js-color: #f0db4f;
 $bootstrap-color: #553c7b;
 $git-color: #f1502f;
 $sass-color: #cd6799;
+
+// Btn Colors
+$hover-color: #f1f1e6;

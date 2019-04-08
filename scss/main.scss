@@ -13,6 +13,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $dark-color;
+  color: $text-color;
+  background-image: linear-gradient(
+    to right,
+    #2a324b,
+    #56576e,
+    #837f92,
+    #b1abb9,
+    #dfd9e2
+  );
 }
 
 // Grid Container
@@ -32,7 +42,7 @@
   background-color: $light-color;
   padding: 2rem 1.25rem;
   text-align: center;
-  border: 1px solid blue;
+  // border: 1px solid blue;
 
   &-flex-container {
     display: flex;
@@ -120,7 +130,7 @@
   background-color: $light-color;
   padding: 2rem 1.25rem;
   text-align: center;
-  border: 1px solid green;
+  // border: 1px solid green;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

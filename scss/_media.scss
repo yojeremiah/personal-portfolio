@@ -10,7 +10,7 @@
 @media only screen and (min-width: $desktop-breakpoint) {
   html,
   body {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
 
   .page-grid {
@@ -24,7 +24,7 @@
   .profile-left {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     .profile-name {
@@ -47,7 +47,8 @@
 
   .btn {
     align-self: end;
-    font-size: 1.15rem;
+    // font-size: 1.15rem;
+    padding: 1rem;
   }
 
   .email-modal {
