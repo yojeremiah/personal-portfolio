@@ -45,10 +45,12 @@ textarea {
   opacity: 1;
   font-size: 1rem;
   font-weight: 700;
+  transition: box-shadow 100ms ease-in-out;
 
   &:hover {
-    background-color: $dark-color;
-    color: $med-color;
+    // background-color: $dark-color;
+    // color: $med-color;
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.25);
   }
 }
 
