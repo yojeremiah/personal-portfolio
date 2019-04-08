@@ -42,6 +42,7 @@
   background-color: $light-color;
   padding: 2rem 1.25rem;
   text-align: center;
+  box-shadow: 1px 1px 5px black;
   // border: 1px solid blue;
 
   &-flex-container {
@@ -135,6 +136,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 1px 1px 5px black;
 
   .profile-text {
     line-height: 1.6;
