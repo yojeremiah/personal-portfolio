@@ -138,6 +138,7 @@
               name="name"
               placeholder="Enter your name"
               class="text-input"
+              required
             />
           </div>
           <div class="form-input-group">
@@ -145,9 +146,10 @@
             <input
               type="text"
               id="email"
-              email="name"
+              name="email"
               placeholder="Enter your email"
               class="text-input"
+              required
             />
           </div>
           <div class="form-input-group">
@@ -157,10 +159,11 @@
               id="message"
               placeholder="Enter a message!"
               class="text-area"
+              required
             ></textarea>
           </div>
-          <button class="btn btn-submit" form="email-form" value="Submit">
-            Submit
+          <button class="btn btn-submit" type="submit" form-name="email-form">
+            Send
           </button>
           <!-- <button type="submit" form="form1" value="Submit">Submit</button> -->
           <!-- <input
