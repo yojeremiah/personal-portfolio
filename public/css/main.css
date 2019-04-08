@@ -95,7 +95,8 @@ textarea {
   display: block;
   max-width: 175px;
   margin: 0 auto;
-  border-radius: 50%; }
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); }
 
 .profile-name {
   font-size: 2.4rem;
