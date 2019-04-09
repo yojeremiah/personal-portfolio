@@ -55,12 +55,12 @@
             <!-- Social Links -->
             <ul class="socials">
               <li>
-                <a href="https://github.com/yojeremiah"
+                <a href="https://github.com/yojeremiah" target="_blank"
                   ><i class="fab fa-github fa-2x" title="Visit My Github"></i
                 ></a>
               </li>
               <li>
-                <a href="https://twitter.com/yojeremiahh"
+                <a href="https://twitter.com/yojeremiahh" target="_blank"
                   ><i
                     class="fab fa-twitter fa-2x"
                     title="Follow Me on Twitter"
@@ -68,7 +68,9 @@
                 ></a>
               </li>
               <li>
-                <a href="https://linked.com/in/schultzjeremiah"
+                <a
+                  href="https://linkedin.com/in/schultzjeremiah"
+                  target="_blank"
                   ><i
                     class="fab fa-linkedin-in fa-2x"
                     title="Connect with me on LinkedIn"
@@ -123,11 +125,35 @@
       <div class="email-modal-content">
         <div class="close-modal-x">&times;</div>
         <p class="form-text">Send me a message below!</p>
-        <form
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>Your Name: <input type="text" name="name"/></label>
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email"/></label>
+          </p>
+          <p>
+            <label
+              >Your Role:
+              <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select></label
+            >
+          </p>
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+        <!-- <form
           method="POST"
           class="email-form"
           name="email-form"
           id="email-form"
+          action="/projects/personal-portfolio/public/index.html"
           data-netlify="true"
         >
           <div class="form-input-group">
@@ -162,17 +188,15 @@
               required
             ></textarea>
           </div>
-          <button class="btn btn-submit" type="submit" form-name="email-form">
+          <button
+            class="btn btn-submit"
+            type="submit"
+            form-name="email-form"
+            value="submit"
+          >
             Send
           </button>
-          <!-- <button type="submit" form="form1" value="Submit">Submit</button> -->
-          <!-- <input
-            type="submit"
-            class="btn btn-submit"
-            id="btn-submit"
-            value="Submit"
-          /> -->
-        </form>
+        </form> -->
       </div>
     </div>
 
