@@ -126,9 +126,10 @@
         <div class="close-modal-x">&times;</div>
         <p class="form-text">Send me a message below!</p>
         <form name="contact" method="POST" data-netlify="true">
-          <p>
-            <label>Your Name: <input type="text" name="name"/></label>
-          </p>
+          <div class="form-input-group">
+            <label for="name">Name: </label>
+            <input type="text" name="name" placeholder="Enter your name" />
+          </div>
           <p>
             <label>Your Email: <input type="email" name="email"/></label>
           </p>
@@ -145,7 +146,7 @@
             <label>Message: <textarea name="message"></textarea></label>
           </p>
           <p>
-            <button type="submit">Send</button>
+            <button type="submit" class="btn">Send</button>
           </p>
         </form>
         <!-- <form
